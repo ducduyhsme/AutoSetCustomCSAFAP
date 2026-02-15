@@ -85,8 +85,8 @@ def format_lineup_name(raw_name: str) -> str:
     Example output: ``"T \\n Smoke \\n Jungle \\n  \\n  \\n  \\n  \\n "``
     """
     words = raw_name.strip().split()
-    capitalised = [w.capitalize() for w in words]
-    name_part = " \\n ".join(capitalised)
+    capitalized = [w.capitalize() for w in words]
+    name_part = " \\n ".join(capitalized)
     return name_part + " \\n  \\n  \\n  \\n  \\n "
 
 

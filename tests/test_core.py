@@ -86,7 +86,7 @@ class TestFormatLineupName:
         result = format_lineup_name("dust2")
         assert result == "Dust2 \\n  \\n  \\n  \\n  \\n "
 
-    def test_preserves_case_on_first_letter(self):
+    def test_capitalizes_first_letter(self):
         result = format_lineup_name("ct mid control")
         assert result == "Ct \\n Mid \\n Control \\n  \\n  \\n  \\n  \\n "
 
